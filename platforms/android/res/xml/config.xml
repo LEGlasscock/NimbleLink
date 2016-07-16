@@ -32,12 +32,12 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <name>IdentiKeep</name>
+    <name>Nimble Link</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Nimble Link is a quick-access application that stores detailed student emergency and contact information for teacher and school administration use.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="leglasscock@hotmail.com" href="">
+        Luke Glasscock
     </author>
     <content src="index.html" />
     <access origin="*" />

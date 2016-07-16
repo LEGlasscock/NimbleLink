@@ -1,8 +1,13 @@
+<!-- All html files are based on Material Kit template by Creative Tim, and modified by Luke Glasscock for purposes of Nimble Link -->
+
 <!DOCTYPE html>
 
 <html>
     <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+        <!-- Removed below because it was flagging Content Security Policy violation
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        -->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -12,22 +17,17 @@
         <link rel="stylesheet" type="text/css" href="css/material-kit.css">
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
 
-        <title>IdentiKeep</title>
+        <title>Nimble Link</title>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <!--
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/fastclick.js"></script>
-        <script type="text/javascript">
-            function onBodyLoad() {
-                alert("onBodyLoad");
-                document.addEventListener("deviceready", onDeviceReady, false);
-            }
+        -->
+        <script type="text/javascript" src="js/indexeddb.js"></script>
 
-            function onDeviceReady()  {
-                alert('test');
-                FastClick.attach(document.body);
-            }
-        </script>
+        <!--   Check Connection   -->
+        <script type="text/javascript" charset="utf-8" src="js/connection.js"></script>
+
     </head>
     <body onload="onBodyLoad()">
     <div class="section section-full-screen section-signup" style="background-image: url('img/city.jpg'); background-size: cover; background-position: top center; min-height: 500px;">
@@ -37,7 +37,7 @@
                     <div class="card card-signup">
                         <form class="form" method="" action="">
                             <div class="header header-primary text-center">
-                                <h4>IdentiKeep Login</h4>
+                                <h4>Nimble Link Login</h4>
                             </div>
                             <div class="content">
                                 <div class="input-group">
@@ -56,6 +56,7 @@
                             <div class="footer text-center">
                                 <p><a href="home.html" class="btn btn-raised btn-primary">Sign In</a></p>
                                 <p><a href="#pablo" class="btn btn-primary">Create an account.</a></p>
+                                <p id="network-status">.</p>
                             </div>
                         </form>
                     </div>
@@ -72,6 +73,7 @@
 
         <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
         <script src="js/material-kit.js" type="text/javascript"></script>
+
 
     </body>
 </html>

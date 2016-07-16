@@ -1,0 +1,101 @@
+<!-- All html files are based on Material Kit template by Creative Tim, and modified by Luke Glasscock for purposes of Nimble Link -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/material-kit.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+
+    <title>Nimble Link</title>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/indexeddb.js"></script>
+</head>
+<body onload="onBodyLoad()" class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation-index">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="components-documentation.html" class="btn" target="_blank">
+                        Components
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.creative-tim.com/product/material-kit" target="_blank" class="btn">
+                        Download
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+    <div class="header header-filter" style="background-image: url('img/bg2.jpeg'); height: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-18">
+                    <div class="brand">
+                        <h3>Mrs. Scott's Class</h3>
+                        <h5 id="student-count"></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="student-list">
+    <!--   If IndexedDB is unable to be accessed, this will be shown  -->
+    <div class="col-md-12 ">
+        <a href="#" class="btn btn-default btn-raised btn-lg btn-block">Samuel Glasscock</a>
+    </div>
+    <div class="col-md-12 ">
+        <a href="arabella_glasscock.html" class="btn btn-default btn-raised btn-lg btn-block">Arabella Glasscock</a>
+    </div>
+    <div class="col-md-12 ">
+        <a href="#" class="btn btn-default btn-raised btn-lg btn-block">John Smith</a>
+    </div>
+    <div class="col-md-12 ">
+        <a href="#" class="btn btn-default btn-raised btn-lg btn-block">Herbie Hancock</a>
+    </div>
+    <div class="col-md-12 ">
+        <a href="#" class="btn btn-default btn-raised btn-lg btn-block">Richard Guide</a>
+    </div>
+    <div class="col-md-12 ">
+        <a href="#" class="btn btn-default btn-raised btn-lg btn-block">Sarah White</a>
+    </div>
+</div>
+<!--   JS  -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<!--   Core JS Files   -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/material.min.js"></script>
+
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="js/material-kit.js" type="text/javascript"></script>
+
+</body>
+</html>
