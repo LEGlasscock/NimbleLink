@@ -2,7 +2,7 @@
 
 var states = {};
 
-function onBodyLoad() {
+function onLoad() {
   console.log("connection onLoad");
   document.addEventListener("deviceready", connectionCheck, false);
 }
@@ -39,3 +39,6 @@ function updateStatus() {
   }
   console.log("Leaving updateStatus");
 }
+
+onLoad();
+document.getElementById("onload").addEventListener("load", onLoad);
